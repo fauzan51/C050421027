@@ -1,0 +1,130 @@
+::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 100px;
+    background-color: darkorange;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    
+}
+
+.nav .logo h1{
+    font-size: 600;
+    font-family: sans-serif;
+    color: #000000;
+
+}
+
+.nav .logo b{
+    color: #e61c1c;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+
+.nav ul .active::before{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #1c5ce6;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.singin{
+    background: transparent;
+    border: none;
+}
+
+.singup{
+    background-color: #e61c1c;
+    color: #ffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.category{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.category .list-item{
+    width: 90%;
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.category .list-item h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+
+}
+
+.category .list-item .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #ffff;
+    outline: 2px solid #1c5ce6;
+}
+
+.category .card-list .card img{
+    width: 100px;
+    height: auto;
+    bottom: 140px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0 20px 20px #e61c1c;
+    border-radius: 50%;
+}
+
